@@ -8,7 +8,7 @@
 | ------------ | ------------ |
 | <img src="4.Docs/Image/RobotReal.jpg" alt="Image 1" height="200"/> | <img src="4.Docs/Image/RobotRender.png" alt="Image 2" height="200"/> |
 
-
+> 项目中电路板绘制使用嘉立创EDA，代码使用Arduino IDE，真的十分适合对机器人感兴趣的初学者复刻，预祝同学们成功！
 
 ### 机械结构资料说明
 
