@@ -6,7 +6,7 @@
 
 | Real Robot        | 3D Design        |
 | ------------ | ------------ |
-| <img src="4.Docs/Image/RobotReal.jpg" alt="Image 1" height="150"/> | <img src="4.Docs/Image/RobotRender.png" alt="Image 2" height="150"/> |
+| <img src="4.Docs/Image/RobotReal.jpg" alt="Image 1" height="200"/> | <img src="4.Docs/Image/RobotRender.png" alt="Image 2" height="200"/> |
 
 [中文文档](README_CN.md)
 
