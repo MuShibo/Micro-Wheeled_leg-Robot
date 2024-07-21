@@ -18,17 +18,19 @@
 
 ### 电路板资料说明
 
-* 有三张PCB需要自制。
+* 有四张PCB需要自制；电路板提供了原理图和PCB的源文件，IDE使用的是[嘉立创EDA](https://lceda.cn/)。
 * 其中主控板基于ESP32，无刷电机驱动芯片为L6234PD013TR，这个淘宝上有很多假芯片，大家买的时候注意。
-* 编码器为AS5600,I2C接口。
-* IMU使用的MPU6050模块，和左侧编码器共用一个IIC接口。
-* 电路板提供了原理图和PCB的源文件，IDE使用的是嘉立创EDA。
+* 编码器芯片为AS5600,使用I2C接口与主控板通讯。
+* IMU使用的MPU6050模块，和左侧编码器共用一个I2C接口。
+* 舵机调试板将串口的两根线统一成一根信号线来完成，通过分时复用来发送和接收数据信息。
+
 
 ### 源代码使用说明
 
-* 基于Arduino IDE，十分简单。
+* 基于[Arduino IDE](https://www.arduino.cc/)，十分简单。
 * 轮子无刷电机驱动基于[simpleFOC](https://www.simplefoc.com/#simplefoc_library)。
-* ESP32本身具有WiFi功能，网页代码存储在Flash中，通过WebSocket通信协议传输JSON数据。
+* 左侧总线舵机ID为1，右侧为2；标定腿部完全蹲下到机械限位位置为2048；使用[FEETECH Debug Software](https://gitee.com/ftservo/fddebug)进行配置。
+* [ESP32](https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf)本身具有WiFi功能，网页代码存储在Flash中，通过WebSocket通信协议传输JSON数据。
 
 ### 使用方法说明
 
