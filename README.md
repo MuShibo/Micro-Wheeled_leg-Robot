@@ -18,17 +18,18 @@
 
 ### PCB Documentation
 
-* There are three PCBs that need to be fabricated.
-* The main control board is based on the ESP32, with the brushless motor driver chip being the L6234PD013TR. Be cautious as there are many counterfeit chips available on Taobao.
-* The encoder used is the AS5600 with an I2C interface.
+* There are four PCBs that need to be fabricated; the circuit boards provide both the schematic and PCB source files, and the IDE used is [LCEDA](https://lceda.cn/).
+* The main control board is based on the ESP32, with the brushless motor driver chip being the L6234PD013TR. 
+* The encoder chip used is the AS5600, communicating with the main control board via the I2C interface.
 * The IMU used is the MPU6050 module, which shares the same I2C interface with the left-side encoder.
-* The circuit board provides both the schematic and PCB source files, and the IDE used is JLCPCB EDA.
+* The servo debugging board unifies the two serial lines into one signal line, completing the task through time-division multiplexing to send and receive data.
 
 ### Source Code Usage
 
-* Based on Arduino IDE, it is very simple.
+* Based on [Arduino IDE](https://www.arduino.cc/), it is very easy to learn and use.
 * The brushless motor drive for the wheels is based on [simpleFOC](https://www.simplefoc.com/#simplefoc_library).
-* The ESP32 itself has WiFi capabilities, and the webpage code is stored in Flash, with JSON data transmitted via the WebSocket communication protocol.
+* The left bus servo ID is 1, and the right is 2; the calibration for the legs to fully squat to the mechanical limit position is 2048; configuration is done using [FEETECH Debug Software](https://gitee.com/ftservo/fddebug).
+* The [ESP32](https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf) itself has WiFi capabilities, with the webpage code stored in flash, transmitting JSON data via the WebSocket communication protocol.
 
 ### Usage Instructions
 
