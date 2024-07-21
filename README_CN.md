@@ -24,6 +24,9 @@
 * IMU使用的MPU6050模块，和左侧编码器共用一个I2C接口。
 * 舵机调试板将串口的两根线统一成一根信号线来完成，通过分时复用来发送和接收数据信息。
 
+| Wire Connection    | 
+| ------------ |
+| <img src="4.Docs/Image/Connection.png" alt="Image 3" height="500"/> |
 
 ### 源代码使用说明
 
