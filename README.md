@@ -24,6 +24,10 @@
 * The IMU used is the MPU6050 module, which shares the same I2C interface with the left-side encoder.
 * The servo debugging board unifies the two serial lines into one signal line, completing the task through time-division multiplexing to send and receive data.
 
+| Wire Connection | 
+| ------------ |
+| <img src="4.Docs/Image/Connection.png" alt="Image 3" height="500"/> |
+
 ### Source Code Usage
 
 * Based on [Arduino IDE](https://www.arduino.cc/), it is very easy to learn and use.
