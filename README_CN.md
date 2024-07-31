@@ -36,6 +36,7 @@
 * 轮子无刷电机驱动基于[simpleFOC](https://www.simplefoc.com/#simplefoc_library)。
 * 左侧总线舵机ID为1，右侧为2；标定腿部完全蹲下到机械限位位置为2048；使用[FEETECH Debug Software](https://gitee.com/ftservo/fddebug)进行配置。
 * [ESP32](https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf)本身具有WiFi功能，网页代码存储在Flash中，通过WebSocket通信协议传输JSON数据。
+* WebSocket库使用[3.Software/libraries](3.Software/libraries)中的库，其他库可直接从官方库下载。
 
 ### 使用方法说明
 
