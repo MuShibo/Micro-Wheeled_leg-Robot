@@ -21,8 +21,9 @@
 * There are four PCBs that need to be fabricated; the circuit boards provide both the schematic and PCB source files, and the IDE used is [LCEDA](https://lceda.cn/).
 * The main control board is based on the ESP32, with the brushless motor driver chip being the L6234PD013TR. 
 * The encoder chip used is the AS5600, communicating with the main control board via the I2C interface.
-* The IMU used is the MPU6050 module, which shares the same I2C interface with the left-side encoder.
+* The IMU used is the MPU6050 module, which shares the same I2C interface with the right-side encoder.
 * The servo debugging board unifies the two serial lines into one signal line, completing the task through time-division multiplexing to send and receive data.
+* In addition, you will need three GH1.25 4PIN double-ended cables, with a recommended length of 15cm. These need to be purchased separately.
 
 | Wire Connection | 
 | ------------ |
