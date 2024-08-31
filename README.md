@@ -35,6 +35,8 @@
 * The brushless motor drive for the wheels is based on [simpleFOC](https://www.simplefoc.com/#simplefoc_library).
 * The left bus servo ID is 1, and the right is 2; the calibration for the legs to fully squat to the mechanical limit position is 2048; configuration is done using [FEETECH Debug Software](https://gitee.com/ftservo/fddebug).
 * The [ESP32](https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf) itself has WiFi capabilities, with the webpage code stored in flash, transmitting JSON data via the WebSocket communication protocol.
+* The libraries uses the libraries in [3.Software/libraries](3.Software/libraries). The recommended esp32 version is 2.0.3.
+* There are two WiFi models, AP mode and STA mode. AP mode uses the device as a wireless hotspot, and STA mode uses the device as a client to connect to an existing wireless network.
 
 ### Usage Instructions
 
