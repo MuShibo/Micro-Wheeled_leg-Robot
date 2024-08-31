@@ -152,8 +152,8 @@ void setup() {
   Serial2.begin(1000000);//腿部sts舵机
 
   //Wifi初始化
-  //WiFi_SetAP();
-  set_sta_wifi();      // ESP-01S STA模式接入WiFi网络
+  WiFi_SetAP();
+  // set_sta_wifi();      // ESP-01S STA模式接入WiFi网络
   webserver.begin();
   webserver.on("/", HTTP_GET, basicWebCallback);
   websocket.begin();
