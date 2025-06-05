@@ -46,7 +46,7 @@ QQ group (unofficial): 991727288
 * 2. After turning on the switch, a red light on the main board will indicate that the power is on.
 * 3. Next, the wheels will start FOC motor initialization, with the wheels moving slightly and the legs starting to move.
 * 4. If the battery is sufficient, the blue LED on the main control board will light up. If it does not light up, charging is needed.
-* 5. After this process is complete, press the EN button on the main control board to restart, and you can then connect to the robot's WiFi network starting with WL. The password is the lowercase WiFi name.
+* 5. After this process is complete, press the EN button on the main control board to restart, and you can then connect to the robot's WiFi network starting with WL. The password is 12345678（refer to: [wifi.cpp](https://github.com/MuShibo/Micro-Wheeled_leg-Robot/blob/master/3.Software/wl_pro_robot/wifi.cpp)).
 * 6. Open a browser and go to the URL 192.168.1.11. The remote control interface is compatible with Android, iOS, Windows, Linux, macOS, etc., and it is recommended to use Chrome or Firefox.
 * 7. Manually stabilize the robot, with the wheels slightly touching the ground. Click the "Robot go!" button on the web page, and the robot will stand up. You can then control the robot's movement using the joystick.
 
